@@ -1,0 +1,14 @@
+Draws a poset given pattern.  Pattern must have k(k-1)/2 ternary digits, where k is 
+the number of items.
+
+The output is png-format image and a graphviz file.
+
+Requires graphviz, in particular dot.
+
+Example:  python draw_poset.py 022110
+
+For each pair of items i, j:
+	0 means i > j
+	2 means i < j
+	1 means i ~ j
+
